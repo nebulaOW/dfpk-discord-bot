@@ -255,11 +255,10 @@ MAP CODES - SUBMISSIONS, DELETIONS
 # Submit map codes
 @bot.command(
     help=("Submit map code with optional description.\n\n"
-          "WARNING: If multiple entries for <creator>,"
-          " wrap both in a single set of quotation marks!\n"
-          "example: \"name1 & name2\"\n\n<type> can be multi or pio\n"
-          "[desc] is optional, no need to wrap in quotation marks."
-          " Use this to add # of levels, checkpoints, etc."),
+          "WARNING: If multiple entries for <creator>, wrap both in a single set of quotation marks!\n"  # noqa: E501
+          "example: \"name1 & name2\"\n\n"
+          "<type> can be multi or pio\n"
+          "[desc] is optional, no need to wrap in quotation marks. Use this to add # of levels, checkpoints, etc."),  # noqa: E501
     brief="Submit map code",
 )
 @is_map_submit_channel()
@@ -332,8 +331,7 @@ async def blackforest(ctx, type=""):
         if type in types_of_map
         else {"map_name": "blackforest"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
 
     if post.count("\n") > 1:
         await ctx.send(post)
@@ -356,8 +354,7 @@ async def ayutthaya(ctx, type=""):
         if type in types_of_map
         else {"map_name": "ayutthaya"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -374,8 +371,7 @@ async def blizzardworld(ctx, type=""):
         if type in types_of_map
         else {"map_name": "blizzardworld"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -392,8 +388,7 @@ async def busan(ctx, type=""):
         if type in types_of_map
         else {"map_name": "busan"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -410,8 +405,7 @@ async def castillo(ctx, type=""):
         if type in types_of_map
         else {"map_name": "castillo"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -428,8 +422,7 @@ async def chateauguillard(ctx, type=""):
         if type in types_of_map
         else {"map_name": "chateauguillard"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -446,8 +439,7 @@ async def dorado(ctx, type=""):
         if type in types_of_map
         else {"map_name": "dorado"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -464,8 +456,7 @@ async def eichenwald(ctx, type=""):
         if type in types_of_map
         else {"map_name": "eichenwald"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -482,8 +473,7 @@ async def hanamura(ctx, type=""):
         if type in types_of_map
         else {"map_name": "hanamura"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -500,8 +490,7 @@ async def havana(ctx, type=""):
         if type in types_of_map
         else {"map_name": "havana"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -518,8 +507,7 @@ async def hollywood(ctx, type=""):
         if type in types_of_map
         else {"map_name": "hollywood"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -536,8 +524,7 @@ async def horizonlunarcolony(ctx, type=""):
         if type in types_of_map
         else {"map_name": "horizonlunarcolony"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -554,8 +541,7 @@ async def ilios(ctx, type=""):
         if type in types_of_map
         else {"map_name": "ilios"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -572,8 +558,7 @@ async def junkertown(ctx, type=""):
         if type in types_of_map
         else {"map_name": "junkertown"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -590,8 +575,7 @@ async def lijiangtower(ctx, type=""):
         if type in types_of_map
         else {"map_name": "lijiangtower"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -608,8 +592,7 @@ async def necropolis(ctx, type=""):
         if type in types_of_map
         else {"map_name": "necropolis"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -626,8 +609,7 @@ async def nepal(ctx, type=""):
         if type in types_of_map
         else {"map_name": "nepal"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -644,8 +626,7 @@ async def numbani(ctx, type=""):
         if type in types_of_map
         else {"map_name": "numbani"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -662,8 +643,7 @@ async def oasis(ctx, type=""):
         if type in types_of_map
         else {"map_name": "oasis"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -680,8 +660,7 @@ async def paris(ctx, type=""):
         if type in types_of_map
         else {"map_name": "paris"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -698,8 +677,7 @@ async def rialto(ctx, type=""):
         if type in types_of_map
         else {"map_name": "rialto"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -716,8 +694,7 @@ async def route66(ctx, type=""):
         if type in types_of_map
         else {"map_name": "route66"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -734,8 +711,7 @@ async def templeofanubis(ctx, type=""):
         if type in types_of_map
         else {"map_name": "templeofanubis"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -752,8 +728,7 @@ async def volskayaindustries(ctx, type=""):
         if type in types_of_map
         else {"map_name": "volskayaindustries"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -770,8 +745,7 @@ async def watchpointgibraltar(ctx, type=""):
         if type in types_of_map
         else {"map_name": "watchpointgibraltar"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -788,8 +762,7 @@ async def kingsrow(ctx, type=""):
         if type in types_of_map
         else {"map_name": "kingsrow"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -806,8 +779,7 @@ async def petra(ctx, type=""):
         if type in types_of_map
         else {"map_name": "petra"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -824,8 +796,7 @@ async def ecopointantarctica(ctx, type=""):
         if type in types_of_map
         else {"map_name": "ecopointantarctica"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -842,8 +813,7 @@ async def kanezaka(ctx, type=""):
         if type in types_of_map
         else {"map_name": "kanezaka"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -860,8 +830,7 @@ async def workshopchamber(ctx, type=""):
         if type in types_of_map
         else {"map_name": "workshopchamber"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -878,8 +847,7 @@ async def workshopexpanse(ctx, type=""):
         if type in types_of_map
         else {"map_name": "workshopexpanse"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -896,8 +864,7 @@ async def workshopgreenscreen(ctx, type=""):
         if type in types_of_map
         else {"map_name": "workshopgreenscreen"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -914,8 +881,7 @@ async def workshopisland(ctx, type=""):
         if type in types_of_map
         else {"map_name": "workshopisland"}
     ):
-        post += (f"{entry['_id']} - {entry['type']} {entry['desc']}"
-                 f" - Created by {entry['creator']}\n")
+        post += f"{entry['_id']} - {entry['type']} {entry['desc']} - Created by {entry['creator']}\n"  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -929,118 +895,103 @@ PERSONAL BESTS / WORLD RECORDS / LEADERBOARDS - SUBMISSIONS, DELETIONS, VIEWING
 
 # Submit personal best records
 @bot.command(
-    help=("Submit personal bests."
-          " Upload a screenshot with this message for proof!\n"
-          "There will be a link in the world record"
-          " leaderboards to the original post.\n"
+    help=("Submit personal bests. Upload a screenshot with this message for proof!\n"  # noqa: E501
+          "There will be a link in the world record leaderboards to the original post.\n"  # noqa: E501
           "Also updates a personal best if it is faster.\n\n"
-          "<record> must be in this format '00:00:00.00'\n"
-          "Remove leading zeroes and colons if they are not needed."),
+          "<record> must be in SECONDS.\n"
+          "Use the /converttime command to easily convert your time to seconds."),
     brief="Submit personal best",
 )
 @is_record_channel()
 async def submitpb(ctx, map_code, level, record):
+    # sanitize for injection
     sanitize(map_code)
     sanitize(record)
     sanitize(level)
+    
+    #input validation
     if not level.isnumeric() or int(level) not in range(0, 41):
         await ctx.channel.send("Level must be a number between 0 and 40")
         return
     if not isEnglish(map_code):
         await ctx.channel.send("Only letters A-Z and numbers 0-9 allowed.")
         return
-    if record.isalnum() and isEnglish(record):
-        await ctx.channel.send(
-            ("Format the time correctly. 00:00:00.00 - "
-             "Consider using the _/convertseconds <seconds>_ command."))
+    try:
+        record = float(record)
+    except:
+        await ctx.channel.send("Please format record in seconds. ex: 00.00")
         return
-    if is_time_format(record):
-        map_code = map_code.upper()
-        if (
-            WorldRecords.count_documents(
-                {
-                    "map_code": map_code,
-                    "name": ctx.author.name,
-                    "level": level,
-                    "posted_by": ctx.author.id,
-                }
-            )
-            == 0
-        ):
+    map_code = map_code.upper()
 
-            newSubmission = {
+    # main
+    if (
+        WorldRecords.count_documents(
+            {
                 "map_code": map_code,
                 "name": ctx.author.name,
-                "record": record,
                 "level": level,
                 "posted_by": ctx.author.id,
-                "message_id": ctx.message.id,
             }
-            WorldRecords.insert_one(newSubmission)
-            await ctx.channel.send(
-                ("Personal best submission accepted:\n"
-                 f"{map_code} level {level} - {ctx.author.name} - {record}")
-            )
-
-        elif (
-            WorldRecords.count_documents(
-                {
-                    "map_code": map_code,
-                    "name": ctx.author.name,
-                    "level": level,
-                    "posted_by": ctx.author.id,
-                }
-            )
-            == 1
-        ):
-            search = WorldRecords.find_one(
-                {
-                    "map_code": map_code,
-                    "name": ctx.author.name,
-                    "level": level,
-                    "posted_by": ctx.author.id,
-                }
-            )
-            # convert strings into datetime obj to compare
-            try:
-                new_record = date_func(record)
-
-                searched_record = date_func(search["record"])
-
-                if new_record < searched_record:
-
-                    # store normal string, not datetime obj.
-                    WorldRecords.update_one(
-                        search,
-                        {
-                            "$set": {
-                                "record": record,
-                                "level": level,
-                                "message_id": ctx.message.id,
-                            }
-                        },
-                    )
-                    await ctx.channel.send(
-                        ("Personal best update accepted:\n"
-                         f"{map_code} level {level} - "
-                         f"{ctx.author.name} - {record}")
-                    )
-                else:
-
-                    await ctx.channel.send(
-                        "Personal best needs to be faster to update."
-                    )
-            except ValueError:
-                await ctx.channel.send(
-                    ("Format the time correctly."
-                     " 00:00:00.00 - Consider using "
-                     "the _/convertseconds <seconds>_ command.")
-                )
-    else:
-        await ctx.channel.send(
-            ("Format the time correctly. 00:00:00.00 - "
-             "Consider using the _/convertseconds <seconds>_ command.")
         )
+        == 0
+    ):
+
+        newSubmission = {
+            "map_code": map_code,
+            "name": ctx.author.name,
+            "record": record,
+            "level": level,
+            "posted_by": ctx.author.id,
+            "message_id": ctx.message.id,
+        }
+        WorldRecords.insert_one(newSubmission)
+        await ctx.channel.send(
+            (f"Personal best submission accepted:\n{map_code} level {level} - {ctx.author.name} - {datetime.timedelta(seconds=record)}")  # noqa: E501
+        )
+
+    elif (
+        WorldRecords.count_documents(
+            {
+                "map_code": map_code,
+                "name": ctx.author.name,
+                "level": level,
+                "posted_by": ctx.author.id,
+            }
+        )
+        == 1
+    ):
+        search = WorldRecords.find_one(
+            {
+                "map_code": map_code,
+                "name": ctx.author.name,
+                "level": level,
+                "posted_by": ctx.author.id,
+            }
+        )
+
+
+        if record < search["record"]:
+
+            # store normal string, not datetime obj.
+            WorldRecords.update_one(
+                search,
+                {
+                    "$set": {
+                        "record": record,
+                        "level": level,
+                        "message_id": ctx.message.id,
+                    }
+                },
+            )
+            await ctx.channel.send(
+                ("Personal best update accepted:\n"
+                    f"{map_code} level {level} - {ctx.author.name} - {datetime.timedelta(seconds=record)}")
+            )
+        else:
+
+            await ctx.channel.send(
+                "Personal best needs to be faster to update."
+            )
 
 
 # view a pb
@@ -1064,10 +1015,12 @@ async def pb(ctx, map_code, level, name=""):
         search = WorldRecords.find_one(
             {"map_code": map_code, "name": name, "level": level}
         )
+        if str(datetime.timedelta(seconds=search['record'])).count('.') == 1:
+            display_record = str(datetime.timedelta(seconds=search['record']))[:-4 or None]
+        else:
+            display_record = datetime.timedelta(seconds=search['record'])
         await ctx.channel.send(
-            (f"{name}'s personal best for {map_code} level {level}:"
-             f" {search['record']} - "
-             f"https://discord.com/channels/195387617972322306/801496775390527548/{search['message_id']}")  # noqa: E501
+            (f"{name}'s personal best for {map_code} Level {level}: {display_record} - https://discord.com/channels/195387617972322306/801496775390527548/{search['message_id']}")  # noqa: E501
         )
     else:
         await ctx.channel.send("Personal best doesn't exist.")
@@ -1099,7 +1052,7 @@ async def deletepb(ctx, map_code, level, name=""):
             await ctx.channel.send("You cannot delete that!")
     else:
         await ctx.channel.send(
-            "Personal best deletion was unsuccesful. Record doesn't exist."
+            "Personal best deletion was unsuccesful."
         )
 
 
@@ -1116,13 +1069,19 @@ async def wr(ctx, map_code, level=""):
 
     if level == "":
         post = f"CODE: {map_code} - WORLD RECORDS:\n"
-        for entry in (
-            WorldRecords.find({"map_code": map_code.upper(), "level": level})
+        level_checker = set()
+        for entry in ( 
+            WorldRecords.find({"map_code": map_code.upper()})
             .sort("record", 1)
-            .limit(1)
+            .limit(20)
         ):
-            post += (f"{entry['name']} - {entry['record']} - {entry['level']} - "
-                    f"https://discord.com/channels/195387617972322306/801496775390527548/{entry['message_id']}\n")  # noqa: E501
+            if entry['level'] not in level_checker:
+                if str(datetime.timedelta(seconds=entry['record'])).count('.') == 1:
+                    display_record = str(datetime.timedelta(seconds=entry['record']))[:-4 or None]
+                else:
+                    display_record = datetime.timedelta(seconds=entry['record'])
+                level_checker.add(entry['level'])
+                post += (f"{entry['name']} - {display_record} - Level {entry['level']} - https://discord.com/channels/195387617972322306/801496775390527548/{entry['message_id']}\n")  # noqa: E501
     else:
         post = f"CODE: {map_code} LEVEL {level} - WORLD RECORD:\n"
         for entry in (
@@ -1130,10 +1089,12 @@ async def wr(ctx, map_code, level=""):
             .sort("record", 1)
             .limit(1)
         ):
-            post += (f"{entry['name']} - {entry['record']} - "
-                    f"https://discord.com/channels/195387617972322306/801496775390527548/{entry['message_id']}\n")  # noqa: E501
-        
-    
+            if str(datetime.timedelta(seconds=entry['record'])).count('.') == 1:
+                display_record = str(datetime.timedelta(seconds=entry['record']))[:-4 or None]
+            else:
+                display_record = datetime.timedelta(seconds=entry['record'])
+            post += (f"{entry['name']} - {display_record} - https://discord.com/channels/195387617972322306/801496775390527548/{entry['message_id']}\n")  # noqa: E501
+
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -1157,8 +1118,11 @@ async def lb(ctx, map_code, level):
         .sort("record", 1)
         .limit(10)
     ):
-        post += (f"{entry['name']} - {entry['record']} - "
-                 f"https://discord.com/channels/195387617972322306/801496775390527548/{entry['message_id']}\n")  # noqa: E501
+        if str(datetime.timedelta(seconds=entry['record'])).count('.') == 1:
+            display_record = str(datetime.timedelta(seconds=entry['record']))[:-4 or None]
+        else:
+            display_record = datetime.timedelta(seconds=entry['record'])
+        post += (f"{entry['name']} - {display_record} - https://discord.com/channels/195387617972322306/801496775390527548/{entry['message_id']}\n")  # noqa: E501
     if post.count("\n") > 1:
         await ctx.send(post)
     else:
@@ -1171,6 +1135,23 @@ async def lb(ctx, map_code, level):
 )
 async def convertseconds(ctx, s):
     await ctx.send(str(datetime.timedelta(seconds=float(s)))[: -4 or None])
+
+@bot.command(
+    help="Converts hours, minutes, seconds to seconds format",
+    brief="Converts hours, minutes, seconds to seconds format",
+)
+@is_record_channel()
+async def converttime(ctx, time_input):
+    time_list = time_input.split(':')
+    print(time_list)
+    if len(time_list) == 1:
+        await ctx.send(float(time_list[0]))
+    elif len(time_list) == 2:
+        await ctx.send((int(time_list[0]) * 60) + float(time_list[1]))
+    elif len(time_list) == 3:
+        await ctx.send((int(time_list[0]) * 3600) + (int(time_list[1]) * 60) + float(time_list[2]))
+    else:
+        await ctx.send("Try again. Format: HH:MM:SS.SS or MM:SS.SS")
 
 
 """
